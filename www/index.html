@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "css/index.css">
+    <script type="text/javascript" src="js/App.js"> </script>
+    <title>GrabJobs By Location</title>
+</head>
+<body>
+    <div class="center-container">
+        <img width="100px" style="margin: 0 auto" src="./img/gj_logo_new.svg" >
+        <br>
+        <div class="padding-1">
+            
+            <div class="font-manrope-light" style="text-align:center">
+                <span>
+                    <input class="font-manrope-light" type="text" id="title" placeholder="search title">
+                    <input class="font-manrope-light" type="text" id="longitude" placeholder="Longitude (deg)">
+                    <input class="font-manrope-light" type="text" id="latitude" placeholder="Latitude (deg)">
+                    <input class="font-manrope-light" type="text" id="radius" placeholder="Radius (km)">
+                </span>
+                <br>
+                <br>
+                <button onclick="App.searchJobs()" class="search-btn padding-0-5 font-manrope-bold">
+                    search
+                </button>
+            </div>
+            <div>
+                <p class="font-manrope-bold" >Available Jobs</p>
+                <div id = "jobsContainer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
